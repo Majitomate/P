@@ -381,3 +381,116 @@ footer {
     margin-top: auto;
     font-size: 0.9rem;
 }
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ajustar el contenedor principal */
+    .container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        gap: 10px; /* Reducir el espacio entre elementos */
+        padding: 10px;
+    }
+
+    /* Ajustar el sidebar */
+    .sidebar {
+        width: 100%; /* Ocupa todo el ancho */
+        height: auto; /* Ajustar altura automáticamente */
+    }
+
+    /* Ajustar las tarjetas de animales */
+    .animal-cards {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 15px; /* Reducir el espacio entre tarjetas */
+    }
+
+    .animal-card {
+        padding: 15px; /* Reducir el padding */
+    }
+
+    /* Ajustar el header */
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .logo-container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        align-items: center;
+        gap: 5px; /* Espaciado entre el logo y el título */
+    }
+
+    .logo-container img {
+        max-width: 60px; /* Reducir el tamaño del logo */
+    }
+
+    .logo-container h1 {
+        font-size: 1.2rem; /* Reducir el tamaño del texto */
+        text-align: center; /* Centrar el texto */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        gap: 10px; /* Espaciado entre los enlaces */
+        width: 100%; /* Ocupa todo el ancho */
+        text-align: center; /* Centrar los enlaces */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        padding: 8px 15px; /* Reducir el padding */
+    }
+
+    /* Ajustar el logo */
+    .logo-container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        align-items: center;
+        gap: 5px;
+    }
+
+    .logo-container img {
+        max-width: 80px; /* Reducir el tamaño del logo */
+    }
+
+    .logo-container h1 {
+        font-size: 1.2rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustar el formulario de búsqueda */
+    .search-container {
+        flex-direction: column; /* Cambiar a diseño en columna */
+        gap: 10px;
+    }
+
+    #search {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .search-button {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    /* Ajustar el modal */
+    .modal-content {
+        width: 90%; /* Reducir el ancho del modal */
+        padding: 20px; /* Reducir el padding */
+    }
+
+    .modal-content input,
+    .modal-content select {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .modal-content button {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    /* Ajustar el footer */
+    footer {
+        font-size: 0.8rem; /* Reducir el tamaño de fuente */
+        padding: 5px;
+    }
+}
